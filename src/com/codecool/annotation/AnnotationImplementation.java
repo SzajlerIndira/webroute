@@ -1,12 +1,16 @@
 package com.codecool.annotation;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Method;
-
 public class AnnotationImplementation {
-    @WebRoute(path= "/test")
-    public static void callMe() {
-        System.out.println("teszt1");
+    @WebRoute(path = "/test")
+    static String onTest(){
+
+        return "This is test";
+    }
+
+    @WebRoute(path = "/test2")
+    static String onTest2(){
+
+        return "This is test2";
     }
 
 }
